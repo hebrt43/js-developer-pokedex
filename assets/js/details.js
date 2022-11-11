@@ -6,30 +6,6 @@ const pokeImg = (document.querySelector(
 
 const pokeList = document.querySelector('#pokemonDetails');
 
-// const pokeInfos = {
-//   nome: '',
-//   exp: '',
-//   altura: '',
-//   peso: '',
-//   habilidades: '',
-// };
-
-// fetch(urlInfos)
-//   .then((data) => {
-//     return data.json();
-//   })
-//   .then((data) => {
-//     pokeInfos.nome = data.name;
-//     pokeInfos.exp = data.base_experience;
-//     pokeInfos.altura = data.height;
-//     pokeInfos.peso = data.weight;
-
-//     const habilidades = data.abilities.map(function (e) {
-//       return e.ability.name;
-//     });
-//     pokeInfos.habilidades = habilidades.join(', ');
-//   });
-
 async function getPokemon() {
   const response = await fetch(urlInfos);
   const data = await response.json();
